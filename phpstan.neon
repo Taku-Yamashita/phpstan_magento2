@@ -1,0 +1,18 @@
+parameters:
+  level: max
+  autoload_files:
+    - src/app/autoload.php #Magento用
+    - vendor/autoload.php  #Extension用
+  fileExtensions:
+    - php
+    - phtml
+  excludes_analyse:
+    - *.xml
+  ignoreErrors:
+    - '#Undefined variable: \$block#'
+    - '#Undefined variable: \$this#'
+    - '#Using \$this outside a class\.#'
+  inferPrivatePropertyTypeFromConstructor: true
+  reportUnmatchedIgnoredErrors: false
+includes:
+    - extension.neon

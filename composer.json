@@ -1,0 +1,13 @@
+{
+  "name": "takuyamashita/phpstan_magento2",
+  "type": "library",
+  "require": {
+    "phpstan/phpstan": "~0.11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magento\\PHPStan\\": "src/Magento/PHPStan"
+    }
+  },
+  "description": "phpstan extention for magento2"
+}

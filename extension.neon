@@ -1,0 +1,13 @@
+services:
+	-
+		class: Magento\PHPStan\Reflection\MagicMethodReflectionExtension
+		tags:
+			- phpstan.broker.methodsClassReflectionExtension
+	-
+		class: Magento\PHPStan\Rules\ForceTypeHintFunctionRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: Magento\PHPStan\Rules\ForceTypeHintPropertyRule
+		tags:
+			- phpstan.rules.rule
