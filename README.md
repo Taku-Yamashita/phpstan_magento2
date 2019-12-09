@@ -1,0 +1,1 @@
+# phpstan_magento2
